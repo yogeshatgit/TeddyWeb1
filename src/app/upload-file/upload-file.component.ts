@@ -45,8 +45,9 @@ export class UploadFileComponent implements OnInit {
       formData.set('file', this.file);
       this._upload.uploadFile(formData, this.selectedCategory).subscribe(
         (data: any) => {
-          this.pdfSrc="file:///home/yogesh/Desktop/Work/teddy-web/src/assets/files/"+ this.fileName;
-          this.uploadedFiles.push(this.fileName);
+          const d = new Date();
+          d.setDate(d.getDate() + 50);
+          this.uploadedFiles.push(this.fileName +' added in - "'+this.selectedCategory+'" AT "' +d +'"');
           console.log('file uploaded successfully');
           alert("file uploaded successfully");
           this.file="";
