@@ -10,7 +10,7 @@ export class UploadFileComponent implements OnInit {
   errorMessage = '';
   btnDisabled: boolean = true;
   file: any;
-  categories = ['Debit Card', 'Credit Card'];
+  categories = ['Cheque Printed', 'Cheque Handwritten', 'Forms','Uncategorized Doc'];
   selectedCategory= '';
   fileName='';
   uploadedFiles:any[]=[];
@@ -47,7 +47,7 @@ export class UploadFileComponent implements OnInit {
         (data: any) => {
           const d = new Date();
           d.setDate(d.getDate() + 50);
-          this.uploadedFiles.push(this.fileName +' added in - "'+this.selectedCategory+'" AT "' +d +'"');
+          this.uploadedFiles.push('"'+this.fileName +'"  -ADDED IN-  "'+this.selectedCategory+'"  -AT-  ' +d );
           console.log('file uploaded successfully');
           alert("file uploaded successfully");
           this.file="";
