@@ -3,6 +3,11 @@
     font-size: small;
   }
 
+  #row{
+
+    display: flex;
+  }
+
   .row{
     padding-top: 20px;
   }
@@ -15,17 +20,16 @@
       color: white;
     background-color: #24a0ed;
   }
-  .filePreview{
-    height: 90vh;
-    border: 1px solid black;
-  }
   .fileUploaded{
     height: 90vh;
+    padding-top: 10px ;
+
     border: 1px solid black;
   }
   #preview{
     border: 1px solid black;
     height:100vh;
   }
+
   
  
