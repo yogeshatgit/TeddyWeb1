@@ -2,6 +2,11 @@
     color: red;
     font-size: small;
   }
+
+  .row{
+    padding-top: 20px;
+  }
+
   button {
     margin: 10px;
   }
@@ -10,7 +15,14 @@
       color: white;
     background-color: #24a0ed;
   }
-
+  .filePreview{
+    height: 90vh;
+    border: 1px solid black;
+  }
+  .fileUploaded{
+    height: 90vh;
+    border: 1px solid black;
+  }
   #preview{
     border: 1px solid black;
     height:100vh;
